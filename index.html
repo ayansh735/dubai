@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="banner">
+      <img src="images/bg.png" class="bg" />
+      <header>
+        <a href="#" class="logo">DUBAI</a>
+        <div class="toggle" onclick="toggle();"></div>
+        <ul class="nav">
+          <li><a href="#" style="--i: 1" class="active">Home</a></li>
+          <li><a href="#" style="--i: 2">About</a></li>
+          <li><a href="#" style="--i: 3">Service</a></li>
+          <li><a href="#" style="--i: 4">Gallery</a></li>
+          <li><a href="#" style="--i: 5">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <h2>
+          Travelling Is Ultimate<br />
+          Happiness
+        </h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it
+        </p>
+        <a href="#">Read More</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#" style="--i: 9"><img src="images/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#" style="--i: 10"><img src="images/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#" style="--i: 11"><img src="images/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <script>
+      const toggle = () => {
+        let menu = document.querySelector(".toggle");
+        let nav = document.querySelector(".nav");
+        menu.classList.toggle("active");
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
